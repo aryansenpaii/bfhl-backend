@@ -35,6 +35,8 @@ app.post("/bfhl", (req, res) => {
 app.get("/bfhl", (req, res) => {
     res.json({ operation_code: 1 });
 });
-
+app.get("/", (req, res) => {
+    res.send("Backend is running!");
+});
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
